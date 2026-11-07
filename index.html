@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История развития Hypixel</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Твой CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <span class="header__logo-icon">👑</span>
+                <div class="header__logo-text">
+                    <span class="header__brand">Hypixel<span class="header__brand-span">History</span></span>
+                    <span class="header__subtitle">История развития</span>
+                </div>
+            </a>
+
+            <!-- Кнопка-бургер -->
+            <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">🏠 Главная</a></li>
+                    <li class="nav__item"><a href="seasons.html" class="nav__link">⚔️ Сезоны</a></li>
+                    <li class="nav__item"><a href="minigames.html" class="nav__link">🏹 Мини-игры</a></li>
+                    <li class="nav__item"><a href="records.html" class="nav__link">📜 Рекорды</a></li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link nav__link--button" data-bs-toggle="modal" data-bs-target="#playModal">▶ Играть</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Добро пожаловать в историю Hypixel!</h1>
+                    <p class="hero__text">
+                        <span class="hero__highlight">Hypixel</span> — крупнейший сервер Minecraft,
+                        изменивший индустрию. Здесь вы найдете полную хронологию развития
+                        сервера: от первых дней до рекордов в Книге Гиннесса.
+                    </p>
+                    <p class="hero__text hero__text--last">
+                        Исследуйте сезоны, узнавайте о любимых мини-играх и следите за
+                        историей обновлений, которые сделали Hypixel легендой.
+                    </p>
+
+                    <div class="stats">
+                        <div class="stats__item" data-bs-toggle="tooltip" data-bs-placement="top" title="Более 15 миллионов уникальных игроков за всю историю">
+                            <span class="stats__number">15+</span>
+                            <span class="stats__label">Миллионов игроков</span>
+                        </div>
+                        <div class="stats__item" data-bs-toggle="tooltip" data-bs-placement="top" title="Более 50 уникальных мини-игр">
+                            <span class="stats__number">50+</span>
+                            <span class="stats__label">Мини-игр</span>
+                        </div>
+                        <div class="stats__item" data-bs-toggle="tooltip" data-bs-placement="top" title="Сервер запущен в 2013 году">
+                            <span class="stats__number">2013</span>
+                            <span class="stats__label">Год основания</span>
+                        </div>
+                        <div class="stats__item" data-bs-toggle="tooltip" data-bs-placement="top" title="Самый популярный сервер Minecraft в мире">
+                            <span class="stats__number">#1</span>
+                            <span class="stats__label">Сервер в мире</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__image">
+                    <img src="/images/hypexel.png" alt="Логотип Hypixel" class="hero__img">
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="features__container">
+                <h2 class="features__title">Почему Hypixel?</h2>
+                <div class="features__grid">
+                    <div class="features__card">
+                        <div class="features__icon">⚡</div>
+                        <h3 class="features__card-title">Инновации</h3>
+                        <p class="features__card-text">Первый сервер с уникальными мини-играми и собственными механиками</p>
+                    </div>
+                    <div class="features__card">
+                        <div class="features__icon">🌍</div>
+                        <h3 class="features__card-title">Сообщество</h3>
+                        <p class="features__card-text">Миллионы игроков со всего мира, дружелюбная атмосфера</p>
+                    </div>
+                    <div class="features__card">
+                        <div class="features__icon">🏆</div>
+                        <h3 class="features__card-title">Рекорды</h3>
+                        <p class="features__card-text">Книга рекордов Гиннесса и множество мировых достижений</p>
+                    </div>
+                    <div class="features__card">
+                        <div class="features__icon">🎮</div>
+                        <h3 class="features__card-title">Разнообразие</h3>
+                        <p class="features__card-text">Более 50 мини-игр на любой вкус и уровень навыка</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="games">
+            <div class="games__container">
+                <h2 class="games__title">🔥 Популярные мини-игры</h2>
+                <div class="games__grid">
+                    <div class="games__card">
+                        <div class="games__icon">⚔️</div>
+                        <h3 class="games__card-title">SkyWars</h3>
+                        <p class="games__card-text">Сражайтесь на островах в небе. Последний выживший побеждает!</p>
+                        <span class="games__tag">PvP</span>
+                    </div>
+                    <div class="games__card">
+                        <div class="games__icon">🏰</div>
+                        <h3 class="games__card-title">BedWars</h3>
+                        <p class="games__card-text">Защищайте свою кровать и уничтожайте кровати врагов.</p>
+                        <span class="games__tag">Стратегия</span>
+                    </div>
+                    <div class="games__card">
+                        <div class="games__icon">🏃</div>
+                        <h3 class="games__card-title">Murder Mystery</h3>
+                        <p class="games__card-text">Раскройте убийцу или останьтесь незамеченным в этой игре на выживание.</p>
+                        <span class="games__tag">Детектив</span>
+                    </div>
+                    <div class="games__card">
+                        <div class="games__icon">🎯</div>
+                        <h3 class="games__card-title">Duels</h3>
+                        <p class="games__card-text">Сражайтесь один на один в различных режимах и покажите свое мастерство.</p>
+                        <span class="games__tag">PvP</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="legend">
+            <div class="legend__container">
+                <h2 class="legend__title">👑 Легендарный игрок Hypixel</h2>
+                <div class="legend__profile">
+                    <div class="legend__avatar">
+                        <img src="/images/technoblade.png" alt="Technoblade" class="legend__avatar-img">
+                        <div class="legend__status">⭐ Абсолютная Легенда</div>
+                    </div>
+                    <div class="legend__info">
+                        <h3 class="legend__name">Technoblade</h3>
+                        <p class="legend__nick">✧ Техноблейд ✧</p>
+                        <div class="legend__stats">
+                            <div class="legend__stat">
+                                <span class="legend__stat-value">1,400+</span>
+                                <span class="legend__stat-name">Побед в BedWars</span>
+                            </div>
+                            <div class="legend__stat">
+                                <span class="legend__stat-value">7,000+</span>
+                                <span class="legend__stat-name">Побед в SkyWars</span>
+                            </div>
+                            <div class="legend__stat">
+                                <span class="legend__stat-value">#1</span>
+                                <span class="legend__stat-name">Рейтинг в дуэлях</span>
+                            </div>
+                            <div class="legend__stat">
+                                <span class="legend__stat-value">10M+</span>
+                                <span class="legend__stat-name">Просмотров на YouTube</span>
+                            </div>
+                        </div>
+                        <div class="legend__description">
+                            <p class="legend__text"><strong class="legend__strong">Technoblade</strong> — самый известный и легендарный игрок в истории Hypixel. Его невероятное мастерство в PvP, стратегическое мышление и уникальный стиль игры сделали его иконой сервера.</p>
+                            <p class="legend__text">Техноблейд известен своими рекордными сериями побед в SkyWars и BedWars, а также непревзойденным мастерством в дуэлях. Его YouTube-канал собрал миллионы подписчиков, а сам игрок стал символом профессионализма на Hypixel.</p>
+                            <div class="legend__achievements">
+                                <span class="legend__achievement">🏆 Рекордная серия побед</span>
+                                <span class="legend__achievement">👑 Непобежденный чемпион</span>
+                                <span class="legend__achievement">⭐ Икона сообщества</span>
+                                <span class="legend__achievement">🎯 Мастер PvP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-legends">
+            <div class="new-legends__container">
+                <h2 class="new-legends__title">🌟 Легенды сообщества</h2>
+                <div class="new-legends__grid">
+                    <div class="new-legends__card">
+                        <div class="new-legends__avatar">
+                            <img src="/images/technoblade.png" alt="Technoblade" class="new-legends__img">
+                            <div class="new-legends__badge">👑 Абсолютная Легенда</div>
+                        </div>
+                        <div class="new-legends__info">
+                            <h3 class="new-legends__name">Technoblade</h3>
+                            <p class="new-legends__nick">✦ Бессмертный Король ✦</p>
+                            <div class="new-legends__stats">
+                                <div class="new-legends__stat">
+                                    <span class="new-legends__stat-value">1,400+</span>
+                                    <span class="new-legends__stat-name">Побед в BedWars</span>
+                                </div>
+                                <div class="new-legends__stat">
+                                    <span class="new-legends__stat-value">7,000+</span>
+                                    <span class="new-legends__stat-name">Побед в SkyWars</span>
+                                </div>
+                            </div>
+                            <p class="new-legends__text">Самый известный игрок в истории Hypixel. Его невероятное мастерство в PvP, стратегическое мышление и уникальный стиль игры сделали его иконой сервера навсегда.</p>
+                            <div class="new-legends__tags">
+                                <span class="new-legends__tag">⚔️ Мастер PvP</span>
+                                <span class="new-legends__tag">👑 Чемпион</span>
+                                <span class="new-legends__tag">⭐ Легенда</span>
+                                <span class="new-legends__tag">🏆 Рекордсмен</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="new-legends__card">
+                        <div class="new-legends__avatar">
+                            <img src="/images/hao.png" alt="Ha****o" class="new-legends__img">
+                            <div class="new-legends__badge">👑 Непобедимый Король</div>
+                        </div>
+                        <div class="new-legends__info">
+                            <h3 class="new-legends__name">Ha****o</h3>
+                            <p class="new-legends__nick">✦ G.O.A.T. Одиночного режима ✦</p>
+                            <div class="new-legends__stats">
+                                <div class="new-legends__stat">
+                                    <span class="new-legends__stat-value">37,000+</span>
+                                    <span class="new-legends__stat-name">Побед в Solo BedWars</span>
+                                </div>
+                                <div class="new-legends__stat">
+                                    <span class="new-legends__stat-value">#1</span>
+                                    <span class="new-legends__stat-name">Рейтинг 7+ лет</span>
+                                </div>
+                            </div>
+                            <p class="new-legends__text">Безусловный G.O.A.T. одиночного режима BedWars. Ha****o удерживает первую позицию в рейтинге более 7 лет.</p>
+                            <div class="new-legends__tags">
+                                <span class="new-legends__tag">🏰 Король BedWars</span>
+                                <span class="new-legends__tag">🎯 Игровой гений</span>
+                                <span class="new-legends__tag">🏆 Абсолютный рекорд</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="new-legends__card">
+                        <div class="new-legends__avatar">
+                            <img src="/images/exc.png" alt="Excaliux" class="new-legends__img">
+                            <div class="new-legends__badge">⚡ Мастер позиционной игры</div>
+                        </div>
+                        <div class="new-legends__info">
+                            <h3 class="new-legends__name">Excaliux</h3>
+                            <p class="new-legends__nick">✦ BKLYN_Warlord ✦</p>
+                            <div class="new-legends__stats">
+                                <div class="new-legends__stat">
+                                    <span class="new-legends__stat-value">#1</span>
+                                    <span class="new-legends__stat-name">Void Crawler</span>
+                                </div>
+                                <div class="new-legends__stat">
+                                    <span class="new-legends__stat-value">#1</span>
+                                    <span class="new-legends__stat-name">Cryomancer</span>
+                                </div>
+                            </div>
+                            <p class="new-legends__text">Бесспорный мастер Void Crawler и Cryomancer в Smash Heroes. Его игра основана на безупречном позиционировании.</p>
+                            <div class="new-legends__tags">
+                                <span class="new-legends__tag">🗡️ Мастер механик</span>
+                                <span class="new-legends__tag">🛡️ Тактик</span>
+                                <span class="new-legends__tag">⭐ Легенда Smash Heroes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline">
+            <div class="timeline__container">
+                <h2 class="timeline__title">📅 История развития</h2>
+                <div class="timeline__list">
+                    <div class="timeline__item">
+                        <span class="timeline__year">2013</span>
+                        <div class="timeline__content">
+                            <h3 class="timeline__content-title">Основание сервера</h3>
+                            <p class="timeline__content-text">Саймон Коллинз и его команда запускают Hypixel. Первые мини-игры: Quakecraft и TNT Games.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <span class="timeline__year">2015</span>
+                        <div class="timeline__content">
+                            <h3 class="timeline__content-title">Первый миллион</h3>
+                            <p class="timeline__content-text">Сервер достигает отметки в 1 миллион уникальных игроков. Добавлены SkyWars и BedWars.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <span class="timeline__year">2017</span>
+                        <div class="timeline__content">
+                            <h3 class="timeline__content-title">Мировой рекорд</h3>
+                            <p class="timeline__content-text">Hypixel попадает в Книгу рекордов Гиннесса как самый популярный сервер Minecraft.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <span class="timeline__year">2020</span>
+                        <div class="timeline__content">
+                            <h3 class="timeline__content-title">Новая эра</h3>
+                            <p class="timeline__content-text">Запуск Hytale — новой игры от создателей Hypixel. Сервер продолжает развиваться.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="achievements">
+            <div class="achievements__container">
+                <h2 class="achievements__title">🏅 Мировые достижения Hypixel</h2>
+                <div class="achievements__grid">
+                    <div class="achievements__card">
+                        <span class="achievements__icon">📖</span>
+                        <h3 class="achievements__card-title">Книга рекордов Гиннесса</h3>
+                        <p class="achievements__card-text">Самый популярный сервер Minecraft с более чем 15 миллионами уникальных игроков.</p>
+                    </div>
+                    <div class="achievements__card">
+                        <span class="achievements__icon">🕹️</span>
+                        <h3 class="achievements__card-title">50+ мини-игр</h3>
+                        <p class="achievements__card-text">Огромное разнообразие режимов: от PvP до кооперативных головоломок.</p>
+                    </div>
+                    <div class="achievements__card">
+                        <span class="achievements__icon">🌎</span>
+                        <h3 class="achievements__card-title">Глобальное сообщество</h3>
+                        <p class="achievements__card-text">Игроки из более чем 100 стран, ежедневно создающие новые рекорды.</p>
+                    </div>
+                    <div class="achievements__card">
+                        <span class="achievements__icon">⚡</span>
+                        <h3 class="achievements__card-title">Технологии будущего</h3>
+                        <p class="achievements__card-text">Собственная платформа для мини-игр, которая вдохновила создание Hytale.</p>
+                    </div>
+                    <div class="achievements__card">
+                        <span class="achievements__icon">🎥</span>
+                        <h3 class="achievements__card-title">Контент-мейкеры</h3>
+                        <p class="achievements__card-text">Тысячи стримеров и видеоблогеров, которые сделали Hypixel популярным.</p>
+                    </div>
+                    <div class="achievements__card">
+                        <span class="achievements__icon">🏆</span>
+                        <h3 class="achievements__card-title">Ежегодные турниры</h3>
+                        <p class="achievements__card-text">Крупные соревнования с призовым фондом и участием лучших игроков мира.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="updates">
+            <div class="updates__container">
+                <h2 class="updates__title">📦 Ключевые обновления</h2>
+                <div class="updates__grid">
+                    <div class="updates__card">
+                        <span class="updates__number">01</span>
+                        <h3 class="updates__card-title">Добавлены достижения</h3>
+                        <p class="updates__card-text">Система достижений, которая дала игрокам новые цели и награды за выполнение сложных задач.</p>
+                    </div>
+                    <div class="updates__card">
+                        <span class="updates__number">02</span>
+                        <h3 class="updates__card-title">Режим «Сезоны»</h3>
+                        <p class="updates__card-text">Ежеквартальные обновления с новыми картами, скинами и уникальными событиями.</p>
+                    </div>
+                    <div class="updates__card">
+                        <span class="updates__number">03</span>
+                        <h3 class="updates__card-title">Переход на 1.19</h3>
+                        <p class="updates__card-text">Полная поддержка новых версий Minecraft с улучшенной графикой и механиками.</p>
+                    </div>
+                    <div class="updates__card">
+                        <span class="updates__number">04</span>
+                        <h3 class="updates__card-title">Античит нового поколения</h3>
+                        <p class="updates__card-text">Собственная система защиты от читеров, обеспечивающая честную игру.</p>
+                    </div>
+                    <div class="updates__card">
+                        <span class="updates__number">05</span>
+                        <h3 class="updates__card-title">Кроссплатформенность</h3>
+                        <p class="updates__card-text">Возможность играть с друзьями на разных устройствах без потери прогресса.</p>
+                    </div>
+                    <div class="updates__card">
+                        <span class="updates__number">06</span>
+                        <h3 class="updates__card-title">Событие «Война гильдий»</h3>
+                        <p class="updates__card-text">Масштабное PvP-событие, в котором гильдии сражаются за контроль над территориями.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="staff">
+            <div class="staff__container">
+                <h2 class="staff__title">👨‍💻 Команда разработчиков</h2>
+                <div class="staff__grid">
+                    <div class="staff__card">
+                        <div class="staff__avatar">👑</div>
+                        <h3 class="staff__name">Simon Collins</h3>
+                        <p class="staff__role">Основатель и генеральный директор</p>
+                        <p class="staff__description">Создатель Hypixel и Hytale. Визионер, который превратил сервер в мировую платформу.</p>
+                        <div class="staff__socials">
+                            <a href="#" class="staff__social">🐦</a>
+                            <a href="#" class="staff__social">📺</a>
+                            <a href="#" class="staff__social">💬</a>
+                        </div>
+                    </div>
+                    <div class="staff__card">
+                        <div class="staff__avatar">⚡</div>
+                        <h3 class="staff__name">Noxy</h3>
+                        <p class="staff__role">Технический директор</p>
+                        <p class="staff__description">Главный инженер сервера, ответственный за стабильность и производительность платформы.</p>
+                        <div class="staff__socials">
+                            <a href="#" class="staff__social">🐦</a>
+                            <a href="#" class="staff__social">💬</a>
+                        </div>
+                    </div>
+                    <div class="staff__card">
+                        <div class="staff__avatar">🎨</div>
+                        <h3 class="staff__name">TheGameMakers</h3>
+                        <p class="staff__role">Команда разработчиков</p>
+                        <p class="staff__description">Талантливые разработчики, создающие уникальные мини-игры и контент для миллионов игроков.</p>
+                        <div class="staff__socials">
+                            <a href="#" class="staff__social">📺</a>
+                            <a href="#" class="staff__social">💬</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="community">
+            <div class="community__container">
+                <h2 class="community__title">💬 Сообщество Hypixel</h2>
+                <div class="community__grid">
+                    <div class="community__card">
+                        <span class="community__icon">📊</span>
+                        <h3 class="community__card-title">Статистика сообщества</h3>
+                        <ul class="community__list">
+                            <li class="community__item">👥 15+ миллионов уникальных игроков</li>
+                            <li class="community__item">🌍 Игроки из 100+ стран</li>
+                            <li class="community__item">⏰ 2.5 миллиона ежедневно онлайн</li>
+                            <li class="community__item">🎮 50+ активных мини-игр</li>
+                        </ul>
+                    </div>
+                    <div class="community__card">
+                        <span class="community__icon">🏅</span>
+                        <h3 class="community__card-title">Достижения сообщества</h3>
+                        <ul class="community__list">
+                            <li class="community__item">🏆 Книга рекордов Гиннесса</li>
+                            <li class="community__item">⭐ 1 миллион подписчиков на YouTube</li>
+                            <li class="community__item">🎯 500+ активных серверов-партнёров</li>
+                            <li class="community__item">📅 10+ лет непрерывной работы</li>
+                        </ul>
+                    </div>
+                    <div class="community__card">
+                        <span class="community__icon">🤝</span>
+                        <h3 class="community__card-title">Как присоединиться</h3>
+                        <ul class="community__list">
+                            <li class="community__item">🎮 Играйте на сервере Hypixel</li>
+                            <li class="community__item">📺 Смотрите стримы и видео</li>
+                            <li class="community__item">💬 Общайтесь в Discord</li>
+                            <li class="community__item">🏅 Участвуйте в турнирах</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner">
+            <div class="banner__container">
+                <div class="banner__item">
+                    <span class="banner__number">2.5M</span>
+                    <span class="banner__label">Ежедневных игроков</span>
+                </div>
+                <div class="banner__item">
+                    <span class="banner__number">100+</span>
+                    <span class="banner__label">Стран</span>
+                </div>
+                <div class="banner__item">
+                    <span class="banner__number">5M</span>
+                    <span class="banner__label">Ежемесячных игроков</span>
+                </div>
+                <div class="banner__item">
+                    <span class="banner__number">60+</span>
+                    <span class="banner__label">Режимов игры</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h4 class="footer__section-title">Hypixel History</h4>
+                    <p class="footer__section-text">Самый полный архив истории развития сервера Hypixel</p>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__section-title">Навигация</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="index.html" class="footer__link">Главная</a></li>
+                        <li class="footer__item"><a href="seasons.html" class="footer__link">Сезоны</a></li>
+                        <li class="footer__item"><a href="minigames.html" class="footer__link">Мини-игры</a></li>
+                        <li class="footer__item"><a href="records.html" class="footer__link">Рекорды</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__section-title">Социальные сети</h4>
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social">📺 YouTube</a>
+                        <a href="#" class="footer__social">🐦 Twitter</a>
+                        <a href="#" class="footer__social">💬 Discord</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 Hypixel History. Неофициальный фанатский проект</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== МОДАЛЬНОЕ ОКНО (Bootstrap) ===================== -->
+    <div class="modal fade" id="playModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">🎮 Играть на Hypixel</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <p>IP сервера: <b>mc.hypixel.net</b></p>
+                    <p>Версия Minecraft: <b>1.8 – 1.21</b></p>
+                    <p>Приятной игры! 🏆</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-warning">Подключиться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Инициализация tooltip-подсказок -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            tooltipTriggerList.forEach(function (el) {
+                new bootstrap.Tooltip(el);
+            });
+        });
+    </script>
+
+    <!-- ===================== БУРГЕР-МЕНЮ ===================== -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const burger = document.getElementById('burger');
+        const nav = document.getElementById('nav');
+
+        if (!burger || !nav) return;
+
+        // Создаём оверлей
+        const overlay = document.createElement('div');
+        overlay.className = 'nav-overlay';
+        document.body.appendChild(overlay);
+
+        function openMenu() {
+            burger.classList.add('is-active');
+            burger.setAttribute('aria-expanded', 'true');
+            burger.setAttribute('aria-label', 'Закрыть меню');
+            nav.classList.add('is-open');
+            overlay.classList.add('is-open');
+            document.body.classList.add('menu-open');
+        }
+
+        function closeMenu() {
+            burger.classList.remove('is-active');
+            burger.setAttribute('aria-expanded', 'false');
+            burger.setAttribute('aria-label', 'Открыть меню');
+            nav.classList.remove('is-open');
+            overlay.classList.remove('is-open');
+            document.body.classList.remove('menu-open');
+        }
+
+        function toggleMenu() {
+            if (nav.classList.contains('is-open')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        }
+
+        // Клик по бургеру
+        burger.addEventListener('click', toggleMenu);
+
+        // Клик по затемнению
+        overlay.addEventListener('click', closeMenu);
+
+        // Клик по ссылке — закрываем меню, кроме кнопки «Играть»
+        nav.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                if (link.dataset.bsToggle === 'modal') return;
+                closeMenu();
+            });
+        });
+
+        // Escape закрывает меню
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && nav.classList.contains('is-open')) {
+                closeMenu();
+            }
+        });
+
+        // Если окно расширили до десктопа — сбрасываем состояние
+        window.addEventListener('resize', function () {
+            if (window.innerWidth > 992 && nav.classList.contains('is-open')) {
+                closeMenu();
+            }
+        });
+    });
+    </script>
+
+</body>
+</html>
